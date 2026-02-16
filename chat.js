@@ -118,7 +118,7 @@ class CoyotChat {
   }
 
   async sendMessage(text) {
-    const res = await fetch("http://13.50.118.34/chat", {
+    const res = await fetch("/.netlify/functions/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
